@@ -100,7 +100,7 @@ export default function Home() {
               <div className="relative w-80 h-96 group perspective">
                 
                 {/* Book 1 (AWC) */}
-                <div className="absolute top-4 left-4 w-60 h-80 bg-zinc-900 rounded-lg shadow-2xl border border-zinc-800 transform -rotate-12 translate-x-[-20px] transition-transform duration-500 hover:rotate-[-6deg] hover:translate-x-[-10px] overflow-hidden z-20">
+                <div className="absolute top-4 left-4 w-56 aspect-[1607/2565] bg-zinc-900 rounded-lg shadow-2xl border border-zinc-800 transform -rotate-12 translate-x-[-20px] transition-transform duration-500 hover:rotate-[-6deg] hover:translate-x-[-10px] overflow-hidden z-20">
                   <div className="absolute inset-0 bg-gradient-to-tr from-zinc-950 via-transparent to-transparent opacity-60"></div>
                   <Image 
                     src="/covers/AWC.Front.Cover.jpg" 
@@ -113,7 +113,7 @@ export default function Home() {
                 </div>
 
                 {/* Book 2 (BBPP) */}
-                <div className="absolute top-12 left-24 w-60 h-80 bg-zinc-900 rounded-lg shadow-2xl border border-zinc-800 transform rotate-12 translate-x-[20px] transition-transform duration-500 hover:rotate-[6deg] hover:translate-x-[10px] overflow-hidden z-10">
+                <div className="absolute top-12 left-24 w-56 aspect-[2100/2700] bg-zinc-900 rounded-lg shadow-2xl border border-zinc-800 transform rotate-12 translate-x-[20px] transition-transform duration-500 hover:rotate-[6deg] hover:translate-x-[10px] overflow-hidden z-10">
                   <div className="absolute inset-0 bg-gradient-to-tr from-zinc-950 via-transparent to-transparent opacity-60"></div>
                   <Image 
                     src="/covers/Balloon Boy Web3.jpg" 
@@ -138,7 +138,7 @@ export default function Home() {
               
               {/* Cover Art Display with Toggle */}
               <div className="lg:col-span-5 flex flex-col items-center">
-                <div className="relative w-full max-w-[340px] aspect-[3/4] bg-zinc-900 rounded-xl overflow-hidden shadow-2xl border border-zinc-800 transition-all duration-300">
+                <div className="relative w-full max-w-[340px] aspect-[1607/2565] bg-zinc-900 rounded-xl overflow-hidden shadow-2xl border border-zinc-800 transition-all duration-300">
                   <AnimatePresence mode="wait">
                     {activeCover === "front" ? (
                       <motion.div
@@ -269,7 +269,7 @@ export default function Home() {
               
               {/* Cell 1: Main Cover Visual (Col-span-1) */}
               <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between items-center group overflow-hidden">
-                <div className="relative w-full aspect-[3/4] max-w-[220px] rounded-lg overflow-hidden shadow-xl border border-zinc-800/50 transition-transform duration-500 group-hover:scale-105">
+                <div className="relative w-full aspect-[2100/2700] max-w-[220px] rounded-lg overflow-hidden shadow-xl border border-zinc-800/50 transition-transform duration-500 group-hover:scale-105">
                   <Image 
                     src="/covers/Balloon Boy Web3.jpg" 
                     alt="Balloon Boy Compilation Cover" 
@@ -365,7 +365,7 @@ export default function Home() {
                   <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">Alternative Covers</span>
                 </div>
                 <div className="grid grid-cols-2 gap-3 flex-grow">
-                  <div className="relative rounded-lg overflow-hidden border border-zinc-800 aspect-[3/4]">
+                  <div className="relative rounded-lg overflow-hidden border border-zinc-800 aspect-[1607/2565]">
                     <Image 
                       src="/covers/Balloon Boy 2 Ebook.jpg" 
                       alt="Balloon Boy 2 Cover" 
@@ -374,7 +374,7 @@ export default function Home() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="relative rounded-lg overflow-hidden border border-zinc-800 aspect-[3/4]">
+                  <div className="relative rounded-lg overflow-hidden border border-zinc-800 aspect-[1607/2565]">
                     <Image 
                       src="/covers/Baloon boy 45.jpg" 
                       alt="Balloon Boy 45 Cover" 
