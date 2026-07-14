@@ -427,7 +427,7 @@ export default function Home() {
                 <div className="relative w-64 aspect-[3/4] bg-zinc-900 rounded-2xl overflow-hidden shadow-2xl border border-zinc-800 group">
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80 z-10"></div>
                   <Image 
-                    src="/covers/2.jpg" 
+                    src="/covers/mort-portrait.png" 
                     alt="Mort Gloss Portrait" 
                     fill
                     sizes="(max-width: 256px) 100vw, 256px"
