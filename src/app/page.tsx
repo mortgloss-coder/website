@@ -113,11 +113,11 @@ export default function Home() {
                 </div>
 
                 {/* Book 2 (BBPP) */}
-                <div className="absolute top-12 left-24 w-56 aspect-[2100/2700] bg-zinc-900 rounded-lg shadow-2xl border border-zinc-800 transform rotate-12 translate-x-[20px] transition-transform duration-500 hover:rotate-[6deg] hover:translate-x-[10px] overflow-hidden z-10">
+                <div className="absolute top-12 left-24 w-56 aspect-[1607/2565] bg-zinc-900 rounded-lg shadow-2xl border border-zinc-800 transform rotate-12 translate-x-[20px] transition-transform duration-500 hover:rotate-[6deg] hover:translate-x-[10px] overflow-hidden z-10">
                   <div className="absolute inset-0 bg-gradient-to-tr from-zinc-950 via-transparent to-transparent opacity-60"></div>
                   <Image 
-                    src="/covers/Balloon Boy Web3.jpg" 
-                    alt="Balloon Boy Trilogy Cover" 
+                    src="/covers/2.jpg" 
+                    alt="Balloon Boy Trilogy Stacked Books" 
                     fill 
                     sizes="(max-width: 320px) 100vw, 240px"
                     className="object-cover" 
@@ -267,12 +267,12 @@ export default function Home() {
             {/* Bento Grid Layout */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               
-              {/* Cell 1: Main Cover Visual (Col-span-1) */}
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between items-center group overflow-hidden">
-                <div className="relative w-full aspect-[2100/2700] max-w-[220px] rounded-lg overflow-hidden shadow-xl border border-zinc-800/50 transition-transform duration-500 group-hover:scale-105">
+              {/* Cell 1: Main Cover Visual (Col-span-1, Row-span-2) */}
+              <div className="md:row-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between items-center group overflow-hidden">
+                <div className="relative w-full aspect-[1607/2565] max-w-[220px] rounded-lg overflow-hidden shadow-xl border border-zinc-800/50 transition-transform duration-500 group-hover:scale-105">
                   <Image 
-                    src="/covers/Balloon Boy Web3.jpg" 
-                    alt="Balloon Boy Compilation Cover" 
+                    src="/covers/2.jpg" 
+                    alt="Balloon Boy Trilogy Stacked Books" 
                     fill
                     sizes="(max-width: 220px) 100vw, 220px"
                     className="object-cover"
@@ -358,39 +358,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-
-              {/* Cell 4: Additional cover visual panels (Col-span-1) */}
-              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between">
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">Alternative Covers</span>
-                </div>
-                <div className="grid grid-cols-2 gap-3 flex-grow">
-                  <div className="relative rounded-lg overflow-hidden border border-zinc-800 aspect-[1607/2565]">
-                    <Image 
-                      src="/covers/Balloon Boy 2 Ebook.jpg" 
-                      alt="Balloon Boy 2 Cover" 
-                      fill
-                      sizes="(max-width: 110px) 100vw, 110px"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="relative rounded-lg overflow-hidden border border-zinc-800 aspect-[1607/2565]">
-                    <Image 
-                      src="/covers/Baloon boy 45.jpg" 
-                      alt="Balloon Boy 45 Cover" 
-                      fill
-                      sizes="(max-width: 110px) 100vw, 110px"
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <p className="text-[10px] text-zinc-500 leading-relaxed mt-4">
-                  Original conceptual illustrations and ebook covers developed during serialization.
-                </p>
-              </div>
-
             </div>
-
           </div>
         </section>
 
