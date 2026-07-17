@@ -268,14 +268,14 @@ export default function Home() {
             {/* Bento Grid Layout */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               
-              {/* Cell 1: Main Cover Visual (Col-span-1, Row-span-2) */}
-              <div className="md:row-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-center items-center group overflow-hidden min-h-[450px]">
-                <div className="relative w-full aspect-[1421/1645] max-w-[260px] transition-transform duration-500 group-hover:scale-105 drop-shadow-2xl">
+              {/* Cell 1: Main Cover Visual (Col-span-1) */}
+              <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-center items-center group overflow-hidden">
+                <div className="relative w-full aspect-[1421/1645] max-w-[280px] transition-transform duration-500 group-hover:scale-105 drop-shadow-2xl">
                   <Image 
                     src="/covers/Last_3D_book_Cover.png" 
                     alt="Balloon Boy Trilogy Box Set" 
                     fill
-                    sizes="(max-width: 260px) 100vw, 260px"
+                    sizes="(max-width: 280px) 100vw, 280px"
                     className="object-contain"
                     priority
                   />
@@ -300,8 +300,8 @@ export default function Home() {
                 </div>
                 
                 <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-5">
-                  <h4 className="text-xs font-mono uppercase tracking-widest text-zinc-300 mb-3 flex items-center gap-1.5">
-                    <IconDownload className="h-3.5 w-3.5 text-amber-500" />
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-zinc-100 mb-4 flex items-center gap-1.5">
+                    <IconDownload className="h-4 w-4 text-amber-500" />
                     Download Trilogy Compilation
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
@@ -330,8 +330,8 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Cell 3: Audiobooks Showcase (Col-span-2) */}
-              <div className="md:col-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-between">
+              {/* Cell 3: Audiobooks Showcase (Col-span-3) */}
+              <div className="md:col-span-3 bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-2.5 mb-4">
                     <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-zinc-950 border border-zinc-800 text-amber-500">
