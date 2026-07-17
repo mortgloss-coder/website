@@ -12,7 +12,8 @@ import {
   IconStar, 
   IconRocket, 
   IconAlien,
-  IconMapPin
+  IconMapPin,
+  IconHeadphones
 } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -70,10 +71,10 @@ export default function Home() {
             <div className="lg:col-span-7 flex flex-col items-start text-left z-10">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-zinc-900 border border-zinc-800 px-3 py-1 text-xs font-mono text-amber-500 uppercase tracking-widest mb-6">
                 <IconStar className="h-3.5 w-3.5" />
-                Speculative Fiction & Comedy
+                Speculative Fiction & Satire
               </span>
               <h1 className="text-4xl md:text-6xl font-bold leading-none tracking-tight text-white mb-6">
-                Fables from the afterlife and the edges of the galaxy.
+                Tales from the Edges of the Universe, the Afterlife, and Beyond
               </h1>
               <p className="max-w-[55ch] text-base md:text-lg text-zinc-400 leading-relaxed mb-8">
                 Explore the satirical and mind-bending universes of Mort Gloss. Download full novels and compilation sets in PDF, EPUB, or Word formats completely free.
@@ -116,8 +117,8 @@ export default function Home() {
                 <div className="absolute top-12 left-24 w-56 aspect-[1607/2565] bg-zinc-900 rounded-lg shadow-2xl border border-zinc-800 transform rotate-12 translate-x-[20px] transition-transform duration-500 hover:rotate-[6deg] hover:translate-x-[10px] overflow-hidden z-10">
                   <div className="absolute inset-0 bg-gradient-to-tr from-zinc-950 via-transparent to-transparent opacity-60"></div>
                   <Image 
-                    src="/covers/2.jpg" 
-                    alt="Balloon Boy Trilogy Stacked Books" 
+                    src="/covers/Balloon Boy 2 Ebook.jpg" 
+                    alt="Cosmic Dice Cover" 
                     fill 
                     sizes="(max-width: 320px) 100vw, 240px"
                     className="object-cover" 
@@ -167,7 +168,7 @@ export default function Home() {
                         className="absolute inset-0"
                       >
                         <Image 
-                          src="/covers/Back.Cover.Final.jpg" 
+                          src="/covers/AWC.Back.Cover.Background.png" 
                           alt="The Atheist Welcoming Committee Back Cover" 
                           fill
                           sizes="(max-width: 340px) 100vw, 340px"
@@ -212,7 +213,7 @@ export default function Home() {
 
                 <div className="flex items-center gap-2 mb-8 bg-zinc-900 border border-zinc-800 rounded-lg py-2 px-4 text-xs font-mono text-zinc-300">
                   <IconBook className="h-4 w-4 text-amber-500" />
-                  <span>Comparable to: C.S. Lewis's _The Great Divorce_ & Steven L. Peck's _A Short Stay in Hell_</span>
+                  <span>Comparable to: C.S. Lewis's <span className="italic">The Great Divorce</span> & Steven L. Peck's <span className="italic">A Short Stay in Hell</span></span>
                 </div>
 
                 {/* Downloads Block */}
@@ -257,9 +258,9 @@ export default function Home() {
             
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
               <div className="max-w-xl">
-                <span className="font-mono text-xs uppercase tracking-widest text-amber-500 mb-2">Sci-Fi Trilogy Box Set</span>
+                <span className="font-mono text-xs uppercase tracking-widest text-amber-500 mb-2">Idiot Superhero Trilogy Box Set</span>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-                  Balloon Boy & the Porcupine Pals
+                  Balloon Boy and the Porcupine Pals
                 </h2>
               </div>
             </div>
@@ -269,13 +270,13 @@ export default function Home() {
               
               {/* Cell 1: Main Cover Visual (Col-span-1, Row-span-2) */}
               <div className="md:row-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between items-center group overflow-hidden">
-                <div className="relative w-full aspect-[1607/2565] max-w-[220px] rounded-lg overflow-hidden shadow-xl border border-zinc-800/50 transition-transform duration-500 group-hover:scale-105">
+                <div className="relative w-full aspect-[2802/1868] max-w-[220px] rounded-lg overflow-hidden shadow-xl border border-zinc-800/50 transition-transform duration-500 group-hover:scale-105">
                   <Image 
-                    src="/covers/2.jpg" 
-                    alt="Balloon Boy Trilogy Stacked Books" 
+                    src="/covers/Last_3D_book_Cover.png" 
+                    alt="Balloon Boy Trilogy Box Set" 
                     fill
                     sizes="(max-width: 220px) 100vw, 220px"
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
                 <div className="mt-4 text-center">
@@ -328,34 +329,71 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Cell 3: Feature Callouts (Col-span-2) */}
-              <div className="md:col-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div className="flex flex-col">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-950 border border-zinc-800 text-amber-500 mb-4">
-                    <IconRocket className="h-5 w-5" />
-                  </span>
-                  <h4 className="text-sm font-semibold text-white mb-1">White-Trash Spaceship</h4>
-                  <p className="text-xs text-zinc-500 leading-relaxed">
-                    Featuring a retrofitted single-wide trailer powered by sheer luck and space dynamics.
+              {/* Cell 3: Audiobooks Showcase (Col-span-2) */}
+              <div className="md:col-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2.5 mb-4">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-zinc-950 border border-zinc-800 text-amber-500">
+                      <IconHeadphones className="h-4 w-4" />
+                    </span>
+                    <span className="font-mono text-xs uppercase tracking-widest text-zinc-400">Audiobooks</span>
+                  </div>
+                  <p className="text-zinc-300 text-base font-medium leading-relaxed mb-8">
+                    Experience the Balloon Boy and the Porcupine Pals trilogy in its best format: audio books.
                   </p>
                 </div>
-                <div className="flex flex-col">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-950 border border-zinc-800 text-amber-500 mb-4">
-                    <IconAlien className="h-5 w-5" />
-                  </span>
-                  <h4 className="text-sm font-semibold text-white mb-1">29M Light Years Away</h4>
-                  <p className="text-xs text-zinc-500 leading-relaxed">
-                    A cosmic journey leading straight into the hostile center of the Sombrero Galaxy.
-                  </p>
-                </div>
-                <div className="flex flex-col">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-950 border border-zinc-800 text-amber-500 mb-4">
-                    <IconBook className="h-5 w-5" />
-                  </span>
-                  <h4 className="text-sm font-semibold text-white mb-1">Complete Trilogy</h4>
-                  <p className="text-xs text-zinc-500 leading-relaxed">
-                    Contains all parts of the epic trilogy collected in a single compilation volume.
-                  </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {/* Book 1 */}
+                  <div className="flex flex-col justify-between bg-zinc-950 border border-zinc-850 rounded-xl p-4">
+                    <div>
+                      <span className="text-[10px] font-mono text-amber-500 uppercase tracking-widest">Part I</span>
+                      <h4 className="text-sm font-bold text-white mt-1 mb-4">Antihooliganism</h4>
+                    </div>
+                    <a 
+                      href="https://www.audible.com/pd/Antihooliganism-Audiobook/B094VYK1DZ?ref_pageloadid=not_applicable&pf_rd_p=f3abc0ee-320d-4c19-8388-fcd3a8e6c3a4&pf_rd_r=6T24E8MSPEGVT9P5DTVB&plink=dsWHPF1TfvOk2ynm&pageLoadId=W70udHLyXod2qFZE&creativeId=73c32a9a-e504-4597-bb87-c30c58fc0204&ref=a_author_Mo_c19_lProduct_1_1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex h-9 items-center justify-center gap-1.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs font-semibold text-zinc-300 transition-colors uppercase tracking-wider active:scale-95"
+                    >
+                      <IconHeadphones className="h-3.5 w-3.5 text-amber-500" />
+                      Audible
+                    </a>
+                  </div>
+
+                  {/* Book 2 */}
+                  <div className="flex flex-col justify-between bg-zinc-950 border border-zinc-850 rounded-xl p-4">
+                    <div>
+                      <span className="text-[10px] font-mono text-amber-500 uppercase tracking-widest">Part II</span>
+                      <h4 className="text-sm font-bold text-white mt-1 mb-4">Cosmic Dice</h4>
+                    </div>
+                    <a 
+                      href="https://www.audible.com/pd/Cosmic-Dice-Audiobook/B094VWYSCZ?ref_pageloadid=not_applicable&pf_rd_p=f3abc0ee-320d-4c19-8388-fcd3a8e6c3a4&pf_rd_r=6T24E8MSPEGVT9P5DTVB&plink=dsWHPF1TfvOk2ynm&pageLoadId=W70udHLyXod2qFZE&creativeId=73c32a9a-e504-4597-bb87-c30c58fc0204&ref=a_author_Mo_c19_lProduct_1_2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex h-9 items-center justify-center gap-1.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs font-semibold text-zinc-300 transition-colors uppercase tracking-wider active:scale-95"
+                    >
+                      <IconHeadphones className="h-3.5 w-3.5 text-amber-500" />
+                      Audible
+                    </a>
+                  </div>
+
+                  {/* Book 3 */}
+                  <div className="flex flex-col justify-between bg-zinc-950 border border-zinc-850 rounded-xl p-4">
+                    <div>
+                      <span className="text-[10px] font-mono text-amber-500 uppercase tracking-widest">Part III</span>
+                      <h4 className="text-sm font-bold text-white mt-1 mb-4">Certain Death</h4>
+                    </div>
+                    <a 
+                      href="https://www.audible.com/pd/Certain-Death-Audiobook/B094W1TLTS?ref_pageloadid=not_applicable&pf_rd_p=f3abc0ee-320d-4c19-8388-fcd3a8e6c3a4&pf_rd_r=6T24E8MSPEGVT9P5DTVB&plink=dsWHPF1TfvOk2ynm&pageLoadId=W70udHLyXod2qFZE&creativeId=73c32a9a-e504-4597-bb87-c30c58fc0204&ref=a_author_Mo_c19_lProduct_1_3"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex h-9 items-center justify-center gap-1.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs font-semibold text-zinc-300 transition-colors uppercase tracking-wider active:scale-95"
+                    >
+                      <IconHeadphones className="h-3.5 w-3.5 text-amber-500" />
+                      Audible
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -378,7 +416,7 @@ export default function Home() {
                     Raised in the picturesque comforts of southern Idaho, Mort Gloss developed an enduring fascination for atheists in the afterlife, intergalactic warfare, evolving concepts of socially acceptable body image, chance vs. design hypotheses concerning the origin of the universe, has-been heavy metal bands, and fast-food tacos.
                   </p>
                   <p>
-                    When not writing fiction, Mort works as a regulatory attorney. His stories blend legal-minded logical precision with surreal comedy, creating unique literary journeys that challenge core beliefs while providing laughs.
+                    When not writing fiction, Mort works as a regulatory attorney. His stories blend deep questions with surreal comedy, creating unique literary journeys that challenge core beliefs while providing laughs.
                   </p>
                   <p>
                     He loves his wife, his kids, and store-bought cookies.
@@ -386,7 +424,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2 mt-8 text-xs font-mono text-zinc-500">
                   <IconMapPin className="h-4 w-4 text-amber-500" />
-                  <span>Southern Idaho, USA</span>
+                  <span>West Texas, USA</span>
                 </div>
               </div>
 
@@ -421,7 +459,7 @@ export default function Home() {
                 Reach Out to Mort
               </h2>
               <p className="text-zinc-400 text-sm">
-                Have questions about the novels, feedback on the trilogies, or just want to suggest a cookie recipe? Send Mort a direct message.
+                Have questions about the novels, feedback on the stories, or just want to suggest a fast-food taco joint? Send Mort a direct message.
               </p>
             </div>
 
