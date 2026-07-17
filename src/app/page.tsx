@@ -272,7 +272,7 @@ export default function Home() {
               <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-center items-center group overflow-hidden">
                 <div className="relative w-full aspect-[1421/1645] max-w-full transition-transform duration-500 group-hover:scale-105 drop-shadow-2xl">
                   <Image 
-                    src="/covers/Last_3D_book_Cover.png" 
+                    src="/covers/Balloon_Boy_Trilogy_Box_Set_Cropped.png" 
                     alt="Balloon Boy Trilogy Box Set" 
                     fill
                     sizes="(max-width: 768px) 100vw, 384px"
