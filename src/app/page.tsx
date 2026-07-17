@@ -269,18 +269,19 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               
               {/* Cell 1: Main Cover Visual (Col-span-1, Row-span-2) */}
-              <div className="md:row-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between items-center group overflow-hidden">
-                <div className="relative w-full aspect-[2802/1868] max-w-[220px] rounded-lg overflow-hidden shadow-xl border border-zinc-800/50 transition-transform duration-500 group-hover:scale-105">
+              <div className="md:row-span-2 bg-zinc-900 border border-zinc-800 rounded-2xl p-8 flex flex-col justify-center items-center group overflow-hidden min-h-[450px]">
+                <div className="relative w-full aspect-[1421/1645] max-w-[260px] transition-transform duration-500 group-hover:scale-105 drop-shadow-2xl">
                   <Image 
                     src="/covers/Last_3D_book_Cover.png" 
                     alt="Balloon Boy Trilogy Box Set" 
                     fill
-                    sizes="(max-width: 220px) 100vw, 220px"
+                    sizes="(max-width: 260px) 100vw, 260px"
                     className="object-contain"
+                    priority
                   />
                 </div>
-                <div className="mt-4 text-center">
-                  <span className="text-xs font-mono text-zinc-500 uppercase tracking-widest">Trilogy Compilation Edition</span>
+                <div className="mt-6 text-center">
+                  <span className="text-xs font-mono text-zinc-500 uppercase tracking-widest block">Trilogy Compilation Edition</span>
                 </div>
               </div>
 
